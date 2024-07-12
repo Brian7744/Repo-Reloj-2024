@@ -23,7 +23,7 @@ void ClockW::on_pushButton_clicked()
     if(status==0){
         ui->pushButton->setText("one");
         status=1;
-        ui->per_1->setStyleSheet("background-color: rgb(85, 85, 255);border-radius: 20px;");
+        ui->per_1->setStyleSheet("background-color: rgb(99, 99, 167);border-radius: 20px;");
 
     }else{
         ui->pushButton->setText("cero");
@@ -40,7 +40,7 @@ void ClockW::on_pushButton_2_clicked()
     if(status1==0){
         ui->pushButton_2->setText("one");
         status1=1;
-        ui->per_4->setStyleSheet("background-color: rgb(85, 85, 255);border-radius: 20px;");
+        ui->per_4->setStyleSheet("background-color: rgb(99, 99, 167);border-radius: 20px;");
     }else{
         ui->pushButton_2->setText("cero");
         ui->per_4->setStyleSheet("background-color: rgb(77, 230, 3);border-radius: 20px;");
@@ -58,7 +58,7 @@ void ClockW::on_pushButton_3_clicked()
 
         ui->pushButton_3->setText("one");
         status2=1;
-        ui->per_3->setStyleSheet("background-color: rgb(85, 85, 255);border-radius: 20px;");
+        ui->per_3->setStyleSheet("background-color: rgb(99, 99, 167);border-radius: 20px;");
     }else{
         ui->pushButton_3->setText("cero");
         ui->per_3->setStyleSheet("background-color: rgb(77, 230, 3);border-radius: 20px;");
@@ -74,7 +74,7 @@ void ClockW::on_pushButton_4_clicked()
     if(status3==0){
         status3=1;
         ui->pushButton_4->setText("one");
-        ui->per_5->setStyleSheet("background-color: rgb(85, 85, 255);border-radius: 20px;");
+        ui->per_5->setStyleSheet("background-color: rgb(99, 99, 167);border-radius: 20px;");
     }else{
         status3=0;
         ui->pushButton_4->setText("cero");
