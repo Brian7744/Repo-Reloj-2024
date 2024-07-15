@@ -24,8 +24,11 @@ private slots:
 
     void on_pushButton_4_clicked();
 
+    void on_pushButton_5_clicked();
+
 private:
     Ui::ClockW *ui;
     int status,status1,status2,status3;
+    int meridiano;
 };
 #endif // CLOCKW_H
