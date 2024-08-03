@@ -2,6 +2,7 @@
 #define CLOCKW_H
 
 #include <QWidget>
+#include <QDateTime>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class ClockW; }
@@ -25,6 +26,8 @@ private slots:
     void on_pushButton_4_clicked();
 
     void on_pushButton_5_clicked();
+
+    void on_pushButton_6_clicked();
 
 private:
     Ui::ClockW *ui;

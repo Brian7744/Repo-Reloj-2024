@@ -127,3 +127,11 @@ como el de piedra de ben10.
 Tengo que poner una linea en el centro para poner la hora exacta
 Tengo que escribir el codigo para pedirle la hora
 */
+
+void ClockW::on_pushButton_6_clicked()
+{
+    QDateTime dt;
+
+    ui->lineEdit->setText(dt.currentDateTime().toString("       hh:mm:ss"));
+}
+

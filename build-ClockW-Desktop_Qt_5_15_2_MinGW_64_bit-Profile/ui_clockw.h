@@ -36,6 +36,7 @@ public:
     QPushButton *pushButton_3;
     QPushButton *pushButton_4;
     QPushButton *pushButton_5;
+    QPushButton *pushButton_6;
 
     void setupUi(QWidget *ClockW)
     {
@@ -123,6 +124,9 @@ public:
         pushButton_5 = new QPushButton(ClockW);
         pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
         pushButton_5->setGeometry(QRect(340, 150, 80, 22));
+        pushButton_6 = new QPushButton(ClockW);
+        pushButton_6->setObjectName(QString::fromUtf8("pushButton_6"));
+        pushButton_6->setGeometry(QRect(340, 230, 80, 22));
 
         retranslateUi(ClockW);
 
@@ -137,6 +141,7 @@ public:
         pushButton_3->setText(QCoreApplication::translate("ClockW", "Init", nullptr));
         pushButton_4->setText(QCoreApplication::translate("ClockW", "Init", nullptr));
         pushButton_5->setText(QCoreApplication::translate("ClockW", "AM", nullptr));
+        pushButton_6->setText(QCoreApplication::translate("ClockW", "Time", nullptr));
     } // retranslateUi
 
 };
