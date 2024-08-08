@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <QDateTime>
+#include <QTimer>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class ClockW; }
@@ -19,6 +20,8 @@ public:
 private slots:
     void on_pushButton_clicked();
 
+    void onQTimer1();
+
     void on_pushButton_2_clicked();
 
     void on_pushButton_3_clicked();
@@ -33,5 +36,7 @@ private:
     Ui::ClockW *ui;
     int status,status1,status2,status3;
     int meridiano;
+
+    QTimer *QTimer1;
 };
 #endif // CLOCKW_H

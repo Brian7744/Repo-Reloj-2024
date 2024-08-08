@@ -11,13 +11,23 @@ ClockW::ClockW(QWidget *parent)
     status2 = 0;
     status3 = 0;
     meridiano = 0;
+
+    QTimer1 = new QTimer(this);
+    connect(QTimer1, &QTimer::timeout, this, &ClockW::onQTimer1);
 }
 
 ClockW::~ClockW()
 {
+    delete QTimer1;
     delete ui;
 }
 
+void ClockW::onQTimer1()
+{
+    QDateTime dt;
+
+    ui->lineEdit->setText(dt.currentDateTime().toString("       hh:mm:ss"));
+}
 
 void ClockW::on_pushButton_clicked()
 {
@@ -39,6 +49,8 @@ void ClockW::on_pushButton_clicked()
         }
     }
 }
+
+
 //qApp->setStyleSheet("QLineEdit { background-color: yellow; }");
 
 
@@ -133,5 +145,12 @@ void ClockW::on_pushButton_6_clicked()
     QDateTime dt;
 
     ui->lineEdit->setText(dt.currentDateTime().toString("       hh:mm:ss"));
+
+    if(QTimer1->isActive()){
+        QTimer1->stop();
+    }
+    else{
+        QTimer1->start(100);
+    }
 }
 
