@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>436</width>
-    <height>410</height>
+    <width>428</width>
+    <height>343</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -156,7 +156,8 @@ border-radius: 80px;</string>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);</string>
+      <string notr="true">background-color: rgb(85,85,127);
+font: 16pt &quot;MS PGothic&quot;;</string>
      </property>
     </widget>
    </widget>
@@ -166,7 +167,7 @@ border-radius: 80px;</string>
     <rect>
      <x>341</x>
      <y>10</y>
-     <width>82</width>
+     <width>51</width>
      <height>121</height>
     </rect>
    </property>
@@ -206,7 +207,7 @@ border-radius: 80px;</string>
     <rect>
      <x>340</x>
      <y>150</y>
-     <width>80</width>
+     <width>51</width>
      <height>22</height>
     </rect>
    </property>
@@ -219,9 +220,12 @@ border-radius: 80px;</string>
     <rect>
      <x>340</x>
      <y>230</y>
-     <width>80</width>
+     <width>51</width>
      <height>22</height>
     </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::StrongFocus</enum>
    </property>
    <property name="text">
     <string>Time</string>

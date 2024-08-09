@@ -26,49 +26,65 @@ void ClockW::onQTimer1()
 {
     QDateTime dt;
     int hour=dt.currentDateTime().time().hour();
-    ui->lineEdit->setText(dt.currentDateTime().toString("       hh:mm:ss"));
+    ui->lineEdit->setText(dt.currentDateTime().toString("    hh:mm:ss"));
 // verde  ui->per_1->setStyleSheet("background-color: rgb(77, 230, 3);border-radius: 20px;");
 // fucsia ui->per_1->setStyleSheet("background-color: rgb(250, 0, 250);border-radius: 20px;");
 // base   ui->per_4->setStyleSheet("background-color: rgb(99, 99, 167);border-radius: 20px;");
     switch (hour) {
 
     case 0:
+    case 1:
+    case 2:
         ui->per_1->setStyleSheet("background-color: rgb(250, 0, 250);border-radius: 20px;");
         ui->per_4->setStyleSheet("background-color: rgb(99, 99, 167);border-radius: 20px;");
         ui->per_3->setStyleSheet("background-color: rgb(99, 99, 167);border-radius: 20px;");
         ui->per_5->setStyleSheet("background-color: rgb(99, 99, 167);border-radius: 20px;");
         break;
     case 3:
+    case 4:
+    case 5:
         ui->per_1->setStyleSheet("background-color: rgb(250, 0, 250);border-radius: 20px;");
         ui->per_4->setStyleSheet("background-color: rgb(250, 0, 250);border-radius: 20px;");
         break;
     case 6:
+    case 7:
+    case 8:
         ui->per_1->setStyleSheet("background-color: rgb(250, 0, 250);border-radius: 20px;");
         ui->per_4->setStyleSheet("background-color: rgb(250, 0, 250);border-radius: 20px;");
         ui->per_3->setStyleSheet("background-color: rgb(250, 0, 250);border-radius: 20px;");
         break;
     case 9:
+    case 10:
+    case 11:
         ui->per_1->setStyleSheet("background-color: rgb(250, 0, 250);border-radius: 20px;");
         ui->per_4->setStyleSheet("background-color: rgb(250, 0, 250);border-radius: 20px;");
         ui->per_3->setStyleSheet("background-color: rgb(250, 0, 250);border-radius: 20px;");
         ui->per_5->setStyleSheet("background-color: rgb(250, 0, 250);border-radius: 20px;");
         break;
     case 12:
+    case 13:
+    case 14:
         ui->per_1->setStyleSheet("background-color: rgb(77, 230, 3);border-radius: 20px;");
         ui->per_4->setStyleSheet("background-color: rgb(99, 99, 167);border-radius: 20px;");
         ui->per_3->setStyleSheet("background-color: rgb(99, 99, 167);border-radius: 20px;");
         ui->per_5->setStyleSheet("background-color: rgb(99, 99, 167);border-radius: 20px;");
         break;
     case 15:
+    case 16:
+    case 17:
         ui->per_1->setStyleSheet("background-color: rgb(77, 230, 3);border-radius: 20px;");
         ui->per_4->setStyleSheet("background-color: rgb(77, 230, 3);border-radius: 20px;");
         break;
     case 18:
+    case 19:
+    case 20:
         ui->per_1->setStyleSheet("background-color: rgb(77, 230, 3);border-radius: 20px;");
         ui->per_4->setStyleSheet("background-color: rgb(77, 230, 3);border-radius: 20px;");
         ui->per_3->setStyleSheet("background-color: rgb(77, 230, 3);border-radius: 20px;");
         break;
     case 21:
+    case 22:
+    case 23:
         ui->per_1->setStyleSheet("background-color: rgb(77, 230, 3);border-radius: 20px;");
         ui->per_4->setStyleSheet("background-color: rgb(77, 230, 3);border-radius: 20px;");
         ui->per_3->setStyleSheet("background-color: rgb(77, 230, 3);border-radius: 20px;");
